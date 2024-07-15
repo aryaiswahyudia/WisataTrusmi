@@ -4,35 +4,35 @@
     padding: 0;
     margin: 0;
 }
-body{
+body {
     background-color: lightgray;
 }
 .main-container {
-    background-image: url('../image/mega.jpg'); /* URL of your background image */
-    background-size: cover; /* Ensures the image covers the entire background */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-image: url('../image/mega.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
     font-family: sans-serif;
     width: 90%;
     margin: auto;
     padding: 10px;
 }
-.img-gambar{
+.img-gambar {
     display: flex;
     flex-wrap: wrap;
     position: relative;
 }
-.img-gambar img{
+.img-gambar img {
     width: 10%;
 }
-.menu-header{
+.menu-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 10px;
     flex-wrap: wrap;
 }
-.menu-header a{
+.menu-header a {
     flex: 1;
     text-decoration: none;
     background-color: #102C57;
@@ -63,17 +63,17 @@ body{
         margin-bottom: 20px;
     }
 }
-.paket-container h6{
+.paket-container h6 {
     color: rgb(107, 98, 98);
     padding: 5px;
 }
-.paket-container h3{
+.paket-container h3 {
     margin-bottom: 10px;
 }
 .paket-container i {
     color: #000;
 }
-.paket-container img{
+.paket-container img {
     width: 100%;
     border-radius: 10px;
 }
@@ -88,18 +88,17 @@ body{
     width: 100%;
     height: auto;
 }
-.search-container{
+.search-container {
     margin-bottom: 10px;
 }
-.search-container input[type='text']{
+.search-container input[type='text'] {
     padding: 5px;
     margin-right: 10px;
 }
-.search-container input[type='submit']{
+.search-container input[type='submit'] {
     padding: 5px;
 }
-.brand-container{
-    width: 35%;
+.brand-container {
     position: absolute;
     top: 10%;
     left: 5%;
@@ -107,17 +106,29 @@ body{
 .brand-container img {
     width: 40%;
 }
-.brand-container h1{
+.brand-container h1 {
     color: #FEFAF6;
     text-shadow: 5px 5px 10px #000;
     font-family: "Rowdies", sans-serif;
-    font-weight: 350;
+    font-size: 2.0vw;
     font-style: normal;
 }
-.brand-container h2{
+.brand-container h2 {
     color: #FEFAF6;
     text-shadow: 5px 5px 8px #000;
     font-family: "Rowdies", sans-serif;
-    font-weight: 200;
+    font-size: 1.0vw;
     font-style: normal;
+}
+
+@media (max-width: 600px) {
+    .brand-container h1 {
+        font-size: 0.8em; 
+    }
+    .brand-container h2 {
+        font-size: 0.8em; 
+    }
+    .brand-container img {
+        width: 20%;
+    }
 }
