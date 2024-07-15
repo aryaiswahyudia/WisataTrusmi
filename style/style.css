@@ -120,7 +120,6 @@ body {
     font-size: 1.0vw;
     font-style: normal;
 }
-
 @media (max-width: 600px) {
     .brand-container h1 {
         font-size: 0.8em; 
